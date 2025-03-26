@@ -7,28 +7,136 @@
 </head>
 <body>
     <header>
-        <h1>BotaniQ</h1>
+        <div class="restaurant-name">
+            <h1>BotaniQ</h1>
+            <p>A FRESH TAKE ON VEGAN DINING</p>
+        </div>
         <nav class="nav-menu">
             <ul>
-                <li class="nav-menu-item"><a href="Home.html">Home</a></li>
-                <li class="nav-menu-item"><a href="Menu.html">Menu</a></li>
-                <li class="nav-menu-item"><a href="Gallery.html">Gallery</a></li>
-                <li class="nav-menu-item"><a href="About.html">About Us</a></li>
-                <li class="nav-menu-item"><a href="Contact.html">Contact Us</a></li>
+                <li class="nav-menu-item"><a href="home.html">Home</a></li>
+                <li class="nav-menu-item"><a href="menu.html">Menu</a></li>
+                <li class="nav-menu-item"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-menu-item"><a href="about.html">About Us</a></li>
+                <li class="nav-menu-item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero-section">
-            <h2>"Redefining plant-based dining, one bold flavor at a time."</h2>
-            <p>
-                Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful. 
-            </p>
+            <div class="carousel"> <!--assuming na may carousel pero one pic lang muna-->
+                <img src="img/home/restaurant.png" alt="" width="50%">
+            </div>
+            <div class="caption">
+                <h2>"Redefining plant-based dining, one bold flavor at a time."</h2>
+                <p>
+                    Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful. 
+                </p>
+            </div>
         </section>
         <section class="featured-menu">
             <h2>Featured Dishes</h2>
-            <img src="img/burger.png" alt="" width="75%">
+            <div class="menu-card">
+                <img src="img/home/burger.png" alt="" width="30%">
+                <div class="menu-container">
+                    <div class="name">
+                        <p>Delight Burger</p>
+                    </div>
+                    <div class="price">
+                        <p>₱ 235</p>
+                    </div>
+                    <div class="description">
+                        <p>A hearty plant-based patty made from fresh veggies, beans, and spices, served on a toasted bun with crisp lettuce, juicy tomatoes, and a creamy vegan sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="img/home/pizza.png" alt="" width="30%">
+                <div class="menu-container">
+                    <div class="name">
+                        <p>Harvest Pizza</p>
+                    </div>
+                    <div class="price">
+                        <p>₱ 350</p>
+                    </div>
+                    <div class="description">
+                        <p>A crispy, hand-tossed crust topped with dairy-free cheese, fresh veggies, and a rich tomato sauce, baked to perfection for a plant-powered feast.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="img/home/salad.png" alt="" width="30%">
+                <div class="menu-container">
+                    <div class="name">
+                        <p>Avocado Salad</p>
+                    </div>
+                    <div class="price">
+                        <p>₱ 280</p>
+                    </div>
+                    <div class="description">
+                        <p>A zesty dressing coats creamy avocado, juicy lemon, crisp veggies, and fresh herbs.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button">
+                <a href="menu.html">VIEW FULL MENU</a>
+            </button>
+        </section>
+        <section class="about-section">
+            <img src="img/home/chef.png" alt="" width="40%">
+            <h2>The Story Behind</h2>
+            <p>
+                BotaniQ was born out of a vision to elevate vegan dining beyond just an alternative—it’s an art form. Our founder, a former fine-dining chef, traveled through Vietnam, Thailand, Indonesia, and Malaysia, inspired by the depth of flavors in plant-forward Southeast Asian cuisine.<br><br>
+                BotaniQ has been a gathering place for food lovers, professionals, and conscious diners alike—offering a menu that proves vegan cuisine can be just as refined, intricate, and satisfying as any gourmet experience.
+            </p>
+            <button type="button">
+                <a href="about.html">LEARN MORE</a>
+            </button>
+        </section>
+        <section class="contact-section">
+            <div class="contact-card">
+                <div class="location-container">
+                    <img src="img/home/location.png" alt="">
+                    <div class="card-title">
+                        <p>Location</p>
+                    </div>
+                    <div class="card-info">
+                        <p>A crispy, hand-tossed crust topped with dairy-free cheese, fresh veggies, and a rich tomato sauce, baked to perfection for a plant-powered feast.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="hours-container">
+                    <img src="img/home/location.png" alt="">
+                    <div class="card-title">
+                        <p>Hours</p>
+                    </div>
+                    <div class="card-info">
+                        <p>
+                            Lunch: 12:00 PM – 3:00 PM (Tues – Sun)<br>
+                            Dinner: 6:00 PM – 10:00 PM (Tues – Sun)<br>
+                            Closed on Mondays
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="phone-email-container">
+                    <img src="img/home/phone.png" alt="">
+                    <div class="card-title">
+                        <p>Reservations</p>
+                    </div>
+                    <div class="card-info">
+                        <p>
+                            +63(2)2417208<br>
+                            botaniq@gmail.com
+                        </p>
+                    </div>
+                    <button type="button">
+                        <a href="contact.html">BOOK A TABLE</a>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -52,9 +160,9 @@
                     12PM  -  3PM, 6PM - 10PM
                 </td>
                 <td>
-                    <img src="img/location.png">Eba Building, Manila, Metro Manila<br>
-                    <img src="img/phone.png">+63(2)2417208<br>
-                    <img src="img/email.png">botaniq@gmail.com
+                    <img src="img/footer/location.png">Eba Building, Manila, Metro Manila<br>
+                    <img src="img/footer/phone.png">+63(2)2417208<br>
+                    <img src="img/footer/email.png">botaniq@gmail.com
                 </td>
             </tr>
         </table>
