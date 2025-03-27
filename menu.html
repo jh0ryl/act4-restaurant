@@ -4,23 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <style>
+        .menu-food-image{
+            width: 20%;
+        }
+
+        .menu-category{
+            background-color: #00660C;
+            display: inline-block;
+            padding: 1% 2% 1% 2%;
+        }
+
+        .menu-category h2{
+            text-align: center;
+            color: white;
+            white-space: nowrap;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <main>
         <h1>Our Menu</h1>
-        <section class="menu-section" id="appetizers">
-            <h2>Appetizers</h2>
+        <section class="menu-section" id="appetizer">
+            <div class="menu-category">
+                <h2>Appetizers</h2>
+            </div>
             <div class="menu-card" id="lettuce-wrap">
-                <img src="img/menu/appetizers/lettuce_wrap.png" alt="">
+                <img class="menu-food-image" src="img/menu/appetizers/lettuce_wrap.png" alt="">
                 <div class="menu-info">
                     <div class="name">
                         <span>Lettuce Wrap</span>
                     </div>
                     <div class="price">
-                        <span>₱ </span>
+                        <span>₱ 180</span>
                     </div>
                     <div class="description">
-                        <p></p>
+                        <p>Delicious and healthy, filled with fresh, crisp vegetables and savory plant-based protein, both satisfying and nutritious.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="zucchini-fritter">
+                <img class="menu-food-image" src="img/menu/appetizers/zucchini_fritter.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Zucchini Fritters</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 185</span>
+                    </div>
+                    <div class="description">
+                        <p>Packed with herbaceous flavor, spices, and tangy vegan feta, these fritters are a flavor bomb! Perfectly crispy on the outside, tender and creamy on the inside!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="avocado-salad">
+                <img class="menu-food-image" src="img/menu/appetizers/avocado_salad.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Avocado Salad</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 280</span>
+                    </div>
+                    <div class="description">
+                        <p>A zesty dressing coats creamy avocado, juicy lemon, crisp veggies, and fresh herbs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section" id="main-course">
+            <div class="menu-category">
+                <h2>Main Courses</h2>
+            </div>
+            <div class="menu-card" id="delight-burger">
+                <img class="menu-food-image" src="img/menu/main course/delight_burger.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Delight Burger</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 235</span>
+                    </div>
+                    <div class="description">
+                        <p>A hearty plant-based patty made from fresh veggies, beans, and spices, served on a toasted bun with crisp lettuce, juicy tomatoes, and a creamy vegan sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="harvest-pizza">
+                <img class="menu-food-image" src="img/menu/main course/harvest_pizza.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Harvest Pizza</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 350</span>
+                    </div>
+                    <div class="description">
+                        <p> A crispy, hand-tossed crust topped with dairy-free cheese, fresh veggies, and a rich tomato sauce, baked to perfection for a plant-powered feast.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="cauliflower-puttanesca">
+                <img class="menu-food-image" src="img/menu/main course/cauliflower.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Cauliflower Puttanesca</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 350</span>
+                    </div>
+                    <div class="description">
+                        <p>Cauliflower Puttanesca is a flavorful vegetarian twist on the classic Italian dish. Perfectly balanced with a hint of spice, this dish is a hearty and satisfying plant-based delight.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section" id="dessert">
+            <div class="menu-category">
+                <h2>Desserts</h2>
+            </div>
+            <div class="menu-card" id="lime-pie">
+                <img class="menu-food-image" src="img/menu/desserts/lime_pie.jpg" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Vegan Key Lime Pie</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 250</span>
+                    </div>
+                    <div class="description">
+                        <p>This creamy, vegan dessert is naturally sweetened & uses entirely raw, dairy-free ingredients, with a date, walnut & coconut crust & a creamy avocado filling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="ice-cream">
+                <img class="menu-food-image" src="img/menu/desserts/ice_cream.jpg" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Banana Ice Cream</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 200</span>
+                    </div>
+                    <div class="description">
+                        <p>Creamy, naturally sweet banana ice cream made with ripe bananas and coconut milk, topped with crunchy nuts and dark chocolate drizzle.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="pistachio-mousse">
+                <img class="menu-food-image" src="img/menu/desserts/mousse.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Pistachio Mousse</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 220</span>
+                    </div>
+                    <div class="description">
+                        <p>Chilled to perfection and topped with crunchy chopped pistachios and optional chocolate chips, it's a delightful balance of smoothness and crunch in every spoonful. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section" id="drinks">
+            <div class="menu-category">
+                <h2>Drinks</h2>
+            </div>
+            <div class="menu-card" id="cooler">
+                <img class="menu-food-image" src="img/menu/drinks/cooler.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Green Cooler</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 150</span>
+                    </div>
+                    <div class="description">
+                        <p>A refreshing fusion of green lemon and crisp cucumber, perfectly balanced with a hint of natural sweetness for a revitalizing sip.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="juice">
+                <img class="menu-food-image" src="img/menu/drinks/juice.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Green Juice</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 180</span>
+                    </div>
+                    <div class="description">
+                        <p>This healthy green juice recipe combines parsley, spinach, pears and celery to make a juice packed with bone-supporting vitamin K. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card" id="martini">
+                <img class="menu-food-image" src="img/menu/drinks/martini.png" alt="">
+                <div class="menu-info">
+                    <div class="name">
+                        <span>Guava Vegan Martini</span>
+                    </div>
+                    <div class="price">
+                        <span>₱ 150</span>
+                    </div>
+                    <div class="description">
+                        <p>A refreshing and tropical cocktail crafted with smooth vodka, fresh guava juice, and a hint of citrus for a perfectly balanced blend of sweetness and tang.</p>
                     </div>
                 </div>
             </div>
