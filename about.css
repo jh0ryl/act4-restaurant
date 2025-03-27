@@ -1,0 +1,64 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFEFE !important;
+}
+
+nav{
+    background-color: #FFF !important;
+}
+nav li a{
+    color: black !important; 
+    font-size: 1rem;
+
+}
+
+.nav-link:hover {
+    color: #00660C !important; 
+}
+.nav-link {
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(27, 25, 25);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+nav .brand{
+    font-family: 'Playfair Display'; 
+    font-size: 2rem; 
+    color: #00660C !important; 
+    font-weight: bold;
+}
+
+nav .brand:hover{
+    color: #2d7836 !important; 
+    text-decoration: none;
+}
+
+nav .sub-brand {
+    font-family: 'Playfair Display'; 
+    font-size: 1rem; 
+    margin: 0;
+    padding: 0;
+    color: #7CAF8D !important; 
+}
+
+nav .sub-brand:hover{
+    color: #2d7836 !important; 
+    text-decoration: none;
+}
