@@ -46,19 +46,23 @@
         <form class="contact-form">
             <h3>General Inquiries</h3>
             <div class="first-name">
-                <label>*First Name<br></label>
+                <label class="form-label">*First Name<br></label>
                 <input type="text" required>
             </div>
             <div class="last-name">
-                <label>*Last Name<br></label>
+                <label class="form-label">*Last Name<br></label>
                 <input type="text" required>
             </div>
+            <div class="email">
+                <label class="form-label">*Email Address<br></label>
+                <input type="email" required>
+            </div>
             <div class="phone-number"> <!--try ko lagyan later ng validation-->
-                <label>Phone Number(Optional)<br></label>
+                <label class="form-label">Phone Number(Optional)<br></label>
                 <input type="tel">
             </div>
             <div class="topic">
-                <label>*Select your topic<br></label>
+                <label class="form-label">*Select your topic<br></label>
                 <select class="topic-list">
                     <option value="inquiry">Inquiry</option>
                     <option value="feedback">Feedback</option>
