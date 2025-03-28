@@ -187,6 +187,7 @@ nav .sub-brand:hover{
     padding: 1rem;
     border: none !important;
     font-family: 'Inter';
+    border-radius: 20px !important;
 }
 
 .values-title {
