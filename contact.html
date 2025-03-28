@@ -4,120 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <!--naguluhan lang kung paano igroup yung mga tags, pwede namang palitan to-->
-    <style>
-        .icon {
-            padding-top: 15px;
-            float: left;
-        }
-
-        .text{
-            display: flex;
-            align-items: start;
-            flex-direction: column; 
-            text-align: left;
-        }
-
-        .strong-text {
-            font-weight: bold;
-        }
-
-        .normal-text{
-            font-weight: normal;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>BotaniQ</h1>
-        <nav class="nav-menu">
-            <ul>
-                <li class="nav-menu-item"><a href="Home.html">Home</a></li>
-                <li class="nav-menu-item"><a href="Menu.html">Menu</a></li>
-                <li class="nav-menu-item"><a href="Gallery.html">Gallery</a></li>
-                <li class="nav-menu-item"><a href="About.html">About Us</a></li>
-                <li class="nav-menu-item"><a href="Contact.html">Contact Us</a></li>
-            </ul>
+        <nav class="nav-menu navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid d-flex justify-content-center align-items-start flex-column">
+                <a class="navbar-brand text-center h1 brand" href="home.html">BotaniQ</a>
+                <p class="navbar-brand sub-brand" style="font-family: 'Playfair Display';">A FRESH TAKE ON VEGAN DINING</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto d-flex justify-content-start align-items-center flex-row" style="font-family: 'Playfair Display';">
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="home.html">HOME</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="menu.html">MENU</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
     <main>
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <h3>General Inquiries</h3>
-            <div class="first-name">
-                <label class="form-label">*First Name<br></label>
-                <input type="text" required>
+        <h2 class="text-center" style="font-family: 'Playfair Display';">Contact Us</h2>
+        <div class="line"></div>
+        <div class=" row main-container container-fluid d-flex justify-content-center align-items-start flex-row flex-wrap mt-5">
+            <div class="inquires col-md-5" style="width: 40%;">
+                <form class="contact-form">
+                    <h3 class="text-center mb-5" style="font-family: 'Playfair Display';">General Inquiries</h3>
+                    <div class="form-row">
+                        <div class="first-name form-group col-md-6">
+                            <label class="form-label">*First Name<br></label>
+                            <input type="text" required class="form-control">
+                        </div>
+                        <div class="last-name form-group col-md-6">
+                            <label class="form-label">*Last Name<br></label>
+                            <input type="text" required class="form-control">
+                        </div>
+                    </div>
+                    <div class="email form-group">
+                        <label class="form-label">*Email Address<br></label>
+                        <input type="email" required class="form-control">
+                    </div>
+                    <div class="phone-number form-group"> <!--try ko lagyan later ng validation-->
+                        <label class="form-label">Phone Number(Optional)<br></label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="topic form-group">
+                        <label class="form-label">*Select your topic<br></label>
+                        <select class="topic-list form-control" required id="topic" name="topic" onblur="this.size=0;" onchange="this.size=1; this.blur()">
+                            <option value="inquiry">Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="catering">Catering Services</option>
+                            <option value="event-booking">Event Bookings</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center button">
+                        <button type="submit" class="btn btn-outline-success mx-2">SUBMIT</button>
+                        <button type="reset" class="btn btn-outline-danger mx-2">CANCEL</button>
+                    </div>
+                </form>
             </div>
-            <div class="last-name">
-                <label class="form-label">*Last Name<br></label>
-                <input type="text" required>
+            <div class="find-us col-md-4" style="width: 40%;">
+                <h3 class="text-center mb-5" style="font-family: 'Playfair Display';">Find Us</h3>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482.65416842023956!2d121.0596105!3d14.5857751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c816e48e6d3f%3A0x88453bc6442d4b76!2s22%20Prime!5e0!3m2!1sen!2sph!4v1742986774605!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                </div>
+                <div class="contact-info"> <!--palitan nalang class name if iba trip-->
+                    <div class="text">
+                        <div class="strong-text">
+                            <p class="contact-title"> <i class="fa fa-map-marker icon"></i> Address:</p>
+                            <div class="normal-text">
+                                <p class="p-0">22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Avenue, Ortigas Center, Pasig City, Pasig, 1600 Metro Manila</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="strong-text">
+                            <p class="contact-title"> <i class="fas fa-clock icon"></i> Hours:</p>
+                            <div class="normal-text">
+                                <p>Lunch: 12PM - 3PM (Tues-Sun)</p>
+                                <p>Dinner: 6PM - 10PM (Tues-Sun)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text" id="phone-text"> 
+                        <div class="strong-text">
+                            <p class="contact-title"> <i class="fas fa-phone-alt icon"></i> Phone Number:</p>
+                            <div class="normal-text">
+                                <p>+63(2)2417208</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text" id="email-text">
+                        <div class="strong-text">
+                            <p class="contact-title"> <i class="fa fa-envelope icon"></i> Email Address:</p>
+                            <div class="normal-text">
+                                <p>botaniq@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="email">
-                <label class="form-label">*Email Address<br></label>
-                <input type="email" required>
-            </div>
-            <div class="phone-number"> <!--try ko lagyan later ng validation-->
-                <label class="form-label">Phone Number(Optional)<br></label>
-                <input type="tel">
-            </div>
-            <div class="topic">
-                <label class="form-label">*Select your topic<br></label>
-                <select class="topic-list">
-                    <option value="inquiry">Inquiry</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="catering">Catering Services</option>
-                    <option value="event-booking">Event Bookings</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <button type="submit">Submit</button>
-            <button type="reset">Cancel</button>
-        </form>
-        <div class="map">
-            <h3>Find Us</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482.65416842023956!2d121.0596105!3d14.5857751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c816e48e6d3f%3A0x88453bc6442d4b76!2s22%20Prime!5e0!3m2!1sen!2sph!4v1742986774605!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="contact-info"> <!--palitan nalang class name if iba trip-->
-            <img class="icon" src="img/contact/location.png" alt=""> 
-            <div class="text">
-                <div class="strong-text">
-                    <p>Address:</p>
-                    <div class="normal-text">
-                        <p>22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Avenue, Ortigas Center, Pasig City, Pasig, 1600 Metro Manila</p>
-                    </div>
-                </div>
-            </div>
-            <img class="icon" src="img/contact/clock.png" alt="">
-            <div class="text">
-                <div class="strong-text">
-                    <p>Hours:</p>
-                    <div class="normal-text">
-                        <p>Lunch: 12PM - 3PM (Tues-Sun)</p>
-                        <p>Dinner: 6PM - 10PM (Tues-Sun)</p>
-                    </div>
-                </div>
-            </div>
-            <img class="icon" id="phone-icon" src="img/contact/phone.png" alt="">
-            <div class="text" id="phone-text"> 
-                <div class="strong-text">
-                    <p>Phone Number:</p>
-                    <div class="normal-text">
-                        <p>+63(2)2417208</p>
-                    </div>
-                </div>
-            </div>
-            <img class="icon" id="email-icon" src="img/contact/email.png" alt="">
-            <div class="text" id="email-text">
-                <div class="strong-text">
-                    <p>Email Address:</p>
-                    <div class="normal-text">
-                        <p>botaniq@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
     </main>
+    <footer class="mt-5">
+        <div class="footer-container d-flex justify-content-center align-items-start flex-row">
+            <div class="footer-section company-about">
+            <h4>BotaniQ</h4>
+            <p>Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful.</p>
+            </div>
+            <div class="schedule footer-section d-flex justify-content-center align-items-start flex-column">
+            <h4>Opening Hours</h4>
+            <div class="opening-hours d-flex justify-content-start align-items-start flex-row">
+                <div>
+                <p>Monday</p>
+                <p>Tuesday - Friday</p>
+                <p>Saturday - Sunday</p>
+                </div>
+                <div class="closed" style="margin-left: 1rem;">
+                <p>Closed</p>
+                <p>12PM - 3PM, 6PM - 10PM</p>
+                <p>12PM - 3PM, 6PM - 10PM</p>
+                </div>
+            </div>
+            </div>
+            <div class="footer-section contact-info">
+            <h4>Contact Us</h4>
+            <p style="font-size: 0.8rem;">
+                <img src="img/footer/location.png"  alt="Location Icon"> 22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Avenue, Ortigas Center, Pasig City, Pasig, 1600 Metro Manila
+            </p>
+            <p style="font-size: 0.8rem;">
+                <img src="img/footer/phone.png" alt="Phone Icon"> +63(2)2417208
+            </p>
+            <p style="font-size: 0.8rem;">
+                <img src="img/footer/email.png" alt="Email Icon"> botaniq@gmail.com
+            </p>
+            </div>
+        </div>
+
+        <hr style="background-color: #AAAAAA;"> <p class="text-center" style="color: #AAAAAA;">© 2025 BotaniQ. All rights reserved</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

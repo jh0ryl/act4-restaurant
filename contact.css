@@ -1,0 +1,167 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFEFE !important;
+}
+
+/* nav bar design */
+
+nav{
+    background-color: #FFF !important;
+}
+nav li a{
+    color: black !important; 
+    font-size: 1rem;
+
+}
+
+.nav-link:hover {
+    color: #00660C !important; 
+}
+.nav-link {
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(27, 25, 25);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+nav .brand{
+    font-family: 'Playfair Display'; 
+    font-size: 2rem; 
+    color: #00660C !important; 
+    font-weight: bold;
+}
+
+nav .brand:hover{
+    color: #2d7836 !important; 
+    text-decoration: none;
+}
+
+nav .sub-brand {
+    font-family: 'Playfair Display'; 
+    font-size: 1rem; 
+    margin: 0;
+    padding: 0;
+    color: #7CAF8D !important; 
+}
+
+nav .sub-brand:hover{
+    color: #2d7836 !important; 
+    text-decoration: none;
+} 
+
+.find-us, .inquires {
+    margin: 0 0.5rem;
+    font-family: 'Inter';
+}
+
+.line {
+    width: 8%;
+    background-color: #00660C;
+    height: 0.5vh;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.text{
+    display: flex;
+    align-items: start;
+    flex-direction: column; 
+    text-align: left;
+    font-family: 'Inter';
+}
+
+.contact-title{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Inter';
+}
+
+.strong-text {
+    font-weight: bold;
+}
+
+.map {
+    width: 100%;
+}
+
+.icon {
+    color: #00660C;
+}
+
+.normal-text{
+    font-weight: normal;
+    margin-left: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.button button {
+    padding: 0.5rem 2rem;
+}
+
+select option:hover {
+    background-color: #2d7836 !important;
+    color: #FFF !important; /* Optional: Change text color for better contrast */
+}
+
+/* footer design  */
+
+footer {
+    background-color: #2B3237 !important;
+    padding: 3rem 2rem;
+}
+
+.company-about {
+    width: 40%;
+    padding: 0 2rem;
+}
+
+.contact-info {
+    width: 40%;
+    padding: 0 1rem;
+    margin-left: -1rem;
+}
+
+.opening-hours{
+    font-size: small;
+    width: 80%;
+    padding: 0;
+    /* border: 1px solid #00660C; */
+}
+
+.schedule {
+    width: 30%;
+    /* border: 1px solid #00660C; */
+    padding-right: -2rem;
+}
+
+footer h4 {
+    color: #FFF;
+    font-family: 'Playfair Display';
+    margin-bottom: 2rem;
+}
+
+
+footer p {
+    color: #F5F5F5;
+    font-family: 'Inter';
+}
+
