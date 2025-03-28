@@ -74,6 +74,7 @@ nav .sub-brand:hover{
     margin: 0 auto;
     border-radius: 10px;
 }
+
 .about-history {
     background-color: #F8F8F8;
     width: 50%;
@@ -201,6 +202,8 @@ nav .sub-brand:hover{
     padding: 0.5rem 0; 
     font-size: 0.8rem;
 }
+
+/* footer design */
 
 footer {
     background-color: #2B3237 !important;
