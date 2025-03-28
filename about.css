@@ -243,4 +243,7 @@ footer p {
     font-family: 'Inter';
 }
 
-
+.hover-card-values:hover, .hover-card-staff:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
