@@ -1,3 +1,10 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFEFE !important;
+}
+
 nav{
     background-color: #FFF !important;
 }
@@ -56,9 +63,46 @@ nav .sub-brand:hover{
     text-decoration: none;
 } 
 
-/*footer design*/
+.line {
+    width: 5%;
+    background-color: #00660C;
+    height: 0.5vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
 
-/* footer design */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px; 
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #00660C; 
+}
+
+#img1-barista, #img2-customerv2, #img3-juice, #img4-table {
+    grid-column: span 1; 
+    grid-row: span 1; 
+}
+
+#img5-flour {
+    grid-column: span 2; 
+    grid-row: span 1;
+}
+
+#img6-pizza, #img7-customer {
+    grid-column: span 1;
+    grid-row: span 1;
+}
 
 footer {
     background-color: #2B3237 !important;
@@ -80,12 +124,10 @@ footer {
     font-size: small;
     width: 80%;
     padding: 0;
-    /* border: 1px solid #00660C; */
 }
 
 .schedule {
     width: 30%;
-    /* border: 1px solid #00660C; */
     padding-right: -2rem;
 }
 
@@ -99,4 +141,9 @@ footer h4 {
 footer p {
     color: #F5F5F5;
     font-family: 'Inter';
+}
+
+.hover-card-values:hover, .hover-card-staff:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
