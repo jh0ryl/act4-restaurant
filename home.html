@@ -4,170 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="restaurant-name">
-            <h1>BotaniQ</h1>
-            <p>A FRESH TAKE ON VEGAN DINING</p>
-        </div>
-        <nav class="nav-menu">
-            <ul>
-                <li class="nav-menu-item"><a href="home.html">Home</a></li>
-                <li class="nav-menu-item"><a href="menu.html">Menu</a></li>
-                <li class="nav-menu-item"><a href="gallery.html">Gallery</a></li>
-                <li class="nav-menu-item"><a href="about.html">About Us</a></li>
-                <li class="nav-menu-item"><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="nav-menu navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid d-flex justify-content-center align-items-start flex-column">
+                <a class="navbar-brand text-center h1 brand" href="home.html">BotaniQ</a>
+                <p class="navbar-brand sub-brand" style="font-family: 'Playfair Display';">A FRESH TAKE ON VEGAN DINING</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto d-flex justify-content-start align-items-center flex-row" style="font-family: 'Playfair Display';">
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="home.html">HOME</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="menu.html">MENU</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-menu-item nav-item mx-4"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="carousel"> <!--assuming na may carousel pero one pic lang muna-->
-                <img src="img/home/restaurant.png" alt="" width="50%">
-            </div>
-            <div class="caption">
-                <h2>"Redefining plant-based dining, one bold flavor at a time."</h2>
-                <p>
-                    Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful. 
+        <section class="hero-section text-center">
+            <div class="hero-image">
+                <img src="img/home/restaurant.png" class="img-fluid" alt="Restaurant Image" width="50%">
+                <h2 class="mt-4" style="font-family: 'Playfair Display';" font-size="large">"Redefining plant-based dining, one bold flavor at a time."</h2>
+                <p style="font-family: Montserrat;">
+                Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful.
                 </p>
             </div>
         </section>
-        <section class="featured-menu">
-            <h2>Featured Dishes</h2>
-            <div class="menu-card">
-                <img src="img/home/burger.png" alt="" width="30%">
-                <div class="menu-info">
-                    <div class="name">
-                        <span>Delight Burger</span>
+
+        <section class="menu-section container text-center" id="main-course">
+            <div class="menu-category">
+                <h2 class="text-center" style="font-family: 'Playfair Display';">Featured Dishes</h2>
+                <div class="line"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4 card-hover-effect">
+                    <div class="menu-card card" id="delight-burger">
+                        <img class="menu-food-image" src="img/menu/main course/delight_burger.png" alt="">
+                        <div class="menu-info d-flex flex-column justify-content-center align-items-center">
+                            <div class="name-price">
+                                <div class="name"><span>Delight Burger</span></div>
+                                <div class="price"><span>₱ 235</span></div>
+                            </div>
+                            <div class="description">
+                                <p>A hearty plant-based patty made from fresh veggies, beans, and spices, served on a toasted bun with crisp lettuce, juicy tomatoes, and a creamy vegan sauce.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>₱ 235</span>
+                </div>
+                <div class="col-md-4 mb-4 card-hover-effect">
+                    <div class="menu-card card" id="harvest-pizza">
+                        <img class="menu-food-image" src="img/menu/main course/harvest_pizza.png" alt="">
+                        <div class="menu-info d-flex flex-column justify-content-center align-items-center">
+                            <div class="name-price">
+                                <div class="name"><span>Harvest Pizza</span></div>
+                                <div class="price"><span>₱ 350</span></div>
+                            </div>
+                            <div class="description">
+                                <p>A crispy, hand-tossed crust topped with dairy-free cheese, fresh veggies, and a rich tomato sauce, baked to perfection for a plant-powered feast.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="description">
-                        <p>A hearty plant-based patty made from fresh veggies, beans, and spices, served on a toasted bun with crisp lettuce, juicy tomatoes, and a creamy vegan sauce.</p>
+                </div>
+                <div class="col-md-4 mb-4 card-hover-effect">
+                    <div class="menu-card card" id="avocado-salad">
+                        <img class="menu-food-image" src="img/menu/appetizers/avocado_salad.png" alt="">
+                        <div class="menu-info d-flex flex-column justify-content-center align-items-center">
+                            <div class="name-price">
+                                <div class="name"><span>Avocado Salad</span></div>
+                                <div class="price"><span>₱ 280</span></div>
+                            </div>
+                            <div class="description">
+                                <p>A zesty dressing coats creamy avocado, juicy lemon, crisp veggies, and fresh herbs.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="menu-card">
-                <img src="img/home/pizza.png" alt="" width="30%">
-                <div class="menu-info">
-                    <div class="name">
-                        <span>Harvest Pizza</span>
-                    </div>
-                    <div class="price">
-                        <span>₱ 350</span>
-                    </div>
-                    <div class="description">
-                        <p>A crispy, hand-tossed crust topped with dairy-free cheese, fresh veggies, and a rich tomato sauce, baked to perfection for a plant-powered feast.</p>
-                    </div>
-                </div>
+        
+            <div class="text-center mt-4">
+                <button class="view-menu-btn">
+                    <a href="menu.html">VIEW FULL MENU</a>
+                </button>
             </div>
-            <div class="menu-card">
-                <img src="img/home/salad.png" alt="" width="30%">
-                <div class="menu-info">
-                    <div class="name">
-                        <span>Avocado Salad</span>
-                    </div>
-                    <div class="price">
-                        <span>₱ 280</span>
-                    </div>
-                    <div class="description">
-                        <p>A zesty dressing coats creamy avocado, juicy lemon, crisp veggies, and fresh herbs.</p>
-                    </div>
-                </div>
-            </div>
-            <button type="button">
-                <a href="menu.html">VIEW FULL MENU</a>
-            </button>
         </section>
-        <section class="about-section">
-            <img src="img/home/chef.png" alt="" width="40%">
-            <h2>The Story Behind</h2>
-            <p>
-                BotaniQ was born out of a vision to elevate vegan dining beyond just an alternative—it’s an art form. Our founder, a former fine-dining chef, traveled through Vietnam, Thailand, Indonesia, and Malaysia, inspired by the depth of flavors in plant-forward Southeast Asian cuisine.<br><br>
-                BotaniQ has been a gathering place for food lovers, professionals, and conscious diners alike—offering a menu that proves vegan cuisine can be just as refined, intricate, and satisfying as any gourmet experience.
-            </p>
-            <button type="button">
-                <a href="about.html">LEARN MORE</a>
-            </button>
+             
+        <section class="about-section text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-left">
+                        <h2 style="font-family: 'Playfair Display';">The Story Behind</h2>
+                        <div class="about-line"></div>
+                        <p style="font-family: Montserrat;">
+                            BotaniQ was born out of a vision to elevate vegan dining beyond just an alternative—it’s an art form. 
+                            Our founder, a former fine-dining chef, traveled through Vietnam, Thailand, Indonesia, and Malaysia, 
+                            inspired by the depth of flavors in plant-forward Southeast Asian cuisine.<br><br>
+                            BotaniQ has been a gathering place for food lovers, professionals, and conscious diners alike—offering 
+                            a menu that proves vegan cuisine can be just as refined, intricate, and satisfying as any gourmet experience.
+                        </p>
+                        <button type="button" class="btn btn-primary mt-3">
+                            <a href="about.html">LEARN MORE</a>
+                        </button>
+                    </div>
+        
+                    <div class="col-md-6 text-center">
+                        <img src="img/home/chef.png" class="img-fluid" alt="Chef Image" width="80%">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="contact-section">
-            <div class="contact-card">
-                <div class="location-container">
-                    <img src="img/home/location.png" alt="">
-                    <div class="card-title">
-                        <p>Location</p>
+
+        <section class="contact-section text-center mt-5">
+            <div class="container">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="contact-card">
+                            <img src="img/home/location.png" alt="Location Icon">
+                            <h3>Location</h3>
+                            <p>22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Center, Pasig City, Metro Manila</p>
+                        </div>
                     </div>
-                    <div class="card-info">
-                        <p>22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Avenue, Ortigas Center, Pasig City, Pasig, 1600 Metro Manila</p>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="contact-card">
+                            <img src="img/home/hours.png" alt="Hours Icon">
+                            <h3>Hours</h3>
+                            <p>Lunch: 12:00 PM – 3:00 PM (Tues – Sun)<br> 
+                                Dinner: 6:00 PM – 10:00 PM (Tues – Sun)<br> 
+                                Closed on Mondays
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="hours-container">
-                    <img src="img/home/location.png" alt="">
-                    <div class="card-title">
-                        <p>Hours</p>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="contact-card">
+                            <img src="img/home/phone.png" alt="Phone Icon">
+                            <h3>Reservations</h3>
+                            <p>+63(2)2417208<br> botaniq@gmail.com</p>
+                            <div class="btn-wrapper"> 
+                                <a href="contact.html" class="book-btn">BOOK A TABLE</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-info">
-                        <p>
-                            Lunch: 12:00 PM – 3:00 PM (Tues – Sun)<br>
-                            Dinner: 6:00 PM – 10:00 PM (Tues – Sun)<br>
-                            Closed on Mondays
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="phone-email-container">
-                    <img src="img/home/phone.png" alt="">
-                    <div class="card-title">
-                        <p>Reservations</p>
-                    </div>
-                    <div class="card-info">
-                        <p>
-                            +63(2)2417208<br>
-                            botaniq@gmail.com
-                        </p>
-                    </div>
-                    <button type="button">
-                        <a href="contact.html">SEND US A MESSAGE</a>
-                    </button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <table>
-            <tr>
-                <th>BotaniQ</th>
-                <th colspan="2">Opening Hours</th>
-                <th>Contact Us</th>
-            </tr>
-            <tr>
-                <td width="40%">Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful.</td>
-                <td>
-                    Monday<br>
-                    Tuesday - Friday<br>
-                    Saturdau - Sunday
-                </td>
-                <td>
-                    Closed<br>
-                    12PM  -  3PM, 6PM - 10PM<br>
-                    12PM  -  3PM, 6PM - 10PM
-                </td>
-                <td>
-                    <img src="img/footer/location.png">22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Avenue, Ortigas Center, Pasig City, Pasig, 1600 Metro Manila<br>
-                    <img src="img/footer/phone.png">+63(2)2417208<br>
-                    <img src="img/footer/email.png">botaniq@gmail.com
-                </td>
-            </tr>
-        </table>
+    <footer class="mt-5">
+        <div class="footer-container d-flex justify-content-center align-items-start flex-row">
+            <div class="footer-section company-about">
+            <h4>BotaniQ</h4>
+            <p>Designed for busy professionals, we serve bold, satisfying dishes crafted from fresh, sustainable ingredients—proving that plant-based dining can be both indulgent and impactful.</p>
+            </div>
+            <div class="schedule footer-section d-flex justify-content-center align-items-start flex-column">
+            <h4>Opening Hours</h4>
+            <div class="opening-hours d-flex justify-content-start align-items-start flex-row">
+                <div>
+                <p>Monday</p>
+                <p>Tuesday - Friday</p>
+                <p>Saturday - Sunday</p>
+                </div>
+                <div class="closed" style="margin-left: 1rem;">
+                <p>Closed</p>
+                <p>12PM - 3PM, 6PM - 10PM</p>
+                <p>12PM - 3PM, 6PM - 10PM</p>
+                </div>
+            </div>
+            </div>
+            <div class="footer-section contact-info">
+            <h4>Contact Us</h4>
+            <p style="font-size: 0.8rem;">
+                <img src="img/footer/location.png"  alt="Location Icon"> 22 Prime, 22nd Level Discovery Suites, 25 ADB Avenue, Ortigas Avenue, Ortigas Center, Pasig City, Pasig, 1600 Metro Manila
+            </p>
+            <p style="font-size: 0.8rem;">
+                <img src="img/footer/phone.png" alt="Phone Icon"> +63(2)2417208
+            </p>
+            <p style="font-size: 0.8rem;">
+                <img src="img/footer/email.png" alt="Email Icon"> botaniq@gmail.com
+            </p>
+            </div>
+        </div>
 
-        <hr>© 2025 BotaniQ. All rights reserved
+        <hr style="background-color: #AAAAAA;"> <p class="text-center" style="color: #AAAAAA;">© 2025 BotaniQ. All rights reserved</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

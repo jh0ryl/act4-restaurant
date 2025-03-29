@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFEFE !important;
+}
+
+nav{
+    background-color: #FFF !important;
+}
+nav li a{
+    color: black !important; 
+    font-size: 1rem;
+
+}
+
+.nav-link:hover {
+    color: #00660C !important; 
+}
+.nav-link {
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(27, 25, 25);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+nav .brand{
+    font-family: 'Playfair Display'; 
+    font-size: 2rem; 
+    color: #00660C !important; 
+    font-weight: bold;
+}
+
+nav .brand:hover{
+    color: #2d7836 !important; 
+    text-decoration: none;
+}
+
+nav .sub-brand {
+    font-family: 'Playfair Display'; 
+    font-size: 1rem; 
+    margin: 0;
+    padding: 0;
+    color: #7CAF8D !important; 
+}
+
+nav .sub-brand:hover{
+    color: #2d7836 !important; 
+    text-decoration: none;
+} 
+
+.line {
+    width: 5%;
+    background-color: #00660C;
+    height: 0.5vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px; 
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #00660C; 
+}
+
+#img1-barista, #img2-customerv2, #img3-juice, #img4-table {
+    grid-column: span 1; 
+    grid-row: span 1; 
+}
+
+#img5-flour {
+    grid-column: span 2; 
+    grid-row: span 1;
+}
+
+#img6-pizza, #img7-customer {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+footer {
+    background-color: #2B3237 !important;
+    padding: 3rem 2rem;
+}
+
+.company-about {
+    width: 40%;
+    padding: 0 2rem;
+}
+
+.contact-info {
+    width: 40%;
+    padding: 0 1rem;
+    margin-left: -1rem;
+}
+
+.opening-hours{
+    font-size: small;
+    width: 80%;
+    padding: 0;
+}
+
+.schedule {
+    width: 30%;
+    padding-right: -2rem;
+}
+
+footer h4 {
+    color: #FFF;
+    font-family: 'Playfair Display';
+    margin-bottom: 1rem;
+}
+
+
+footer p {
+    color: #F5F5F5;
+    font-family: 'Inter';
+}
+
+.hover-card-values:hover, .hover-card-staff:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
