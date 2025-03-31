@@ -326,8 +326,18 @@ nav .sub-brand {
     flex-grow: 1;
 }
 
+.contact-card img {
+    margin-top: 10%;
+}
+
+.contact-card h3 {
+    margin-top: 8%;
+}
+
 .contact-card p {
     flex-grow: 1;
+    margin-top: 5%;
+    font-size: 15px;
 }
 
 .contact-card img {
@@ -345,18 +355,6 @@ nav .sub-brand {
     display: inline-block;
     text-align: center;
     border-radius: 5px;
-}
-
-.book-btn a, 
-.book-btn a:visited, 
-.book-btn a:hover, 
-.book-btn a:active, 
-.book-btn a:focus {
-    font-family: 'Montserrat', sans-serif;
-    color: white !important; 
-    text-decoration: none !important;
-    font-weight: bold;
-    display: inline-block; 
 }
 
 .book-btn:hover {
